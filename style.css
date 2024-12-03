@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100vh;
+}
+
+.labirint {
+    width: 700px;
+    height: 700px;
+    background-image: url("./labirint.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.student {
+    height: 50px;
+    width: 25px;
+    background-image: url("./student.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+    animation-name: student-animation;
+    animation-duration: 10s;
+}
+
+@keyframes student-animation {
+    12.5% {
+        transform: translate(-530%, -100%);
+    }
+    25% {
+        transform: translate(-520%, -310%);
+    }
+    37.5% {
+        transform: translate(-759%, -310%);
+    }
+    50% {
+        transform: translate(-770%, -90%);
+    }
+    62.5% {
+        transform: translate(-980%, -90%);
+    }
+    75% {
+        transform: translate(-980%, 420%);
+    }
+    87.5% {
+        transform: translate(585%, 420%);
+    }
+    100% {
+        transform: translate(590%, 600%);
+    }
+}
